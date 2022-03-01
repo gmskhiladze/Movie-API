@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline'; connect-src * 'unsafe-inline'; frame-src *;">
+
+    <link rel="icon" href="./img/Film-icon.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Move API___|-_-|___</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-container">
+            <span class="logo">MOVIE API</span>
+        </div>
+
+        <div class="search-container">
+            <select class="select" id="type" name="movie-type" required>
+                <option value="Movie">Movie</option>
+                <option value="TVSeries">Series</option>
+            </select>
+            <input type="search" class="search-box" placeholder="Search Movies, Series..." id="search-input" required>
+            <input type="button" value="Search" class="search-button" id="btn">
+        </div>
+
+    </header>
+
+
+    <section class="content">
+
+        <div class="ad-place-left">
+            <!-- <img class="ad" src="" alt=""> -->
+        </div>
+
+        <div class="movie-container">
+            <!-- movie place -->
+            <!-- <div class="movie">
+                <div class="movie-details">
+                    <div class="movie-img">
+                        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersendgame_lob_crd_05.jpg"
+                            alt="Image">
+                    </div>
+                    <div class="movie-desc">
+                        <span class="title">Title</span>
+                        <span class="type">type</span>
+                        <span class="ganres">ganres</span>
+                        <span class="year">year</span>
+                        <span class="pg">PG-13</span>
+                        <span class="box-office">2,250,359$</span>
+                        <span class="time">2h 33m</span>
+                        <span class="imdb">iMdb: 8.0 <span style="color: #F5C518;">&#9733;</span></span>
+                        <input type="button" class="${movie.id}" id="trailer" value="Watch Trailer">
+                        <div id="${movie.id}" class="video" style="visibility: hidden;">
+                            <button id="close" onclick="closeTrailer()">
+                                x
+                            </button>
+                            <iframe id="${movie.id}src" class="${movie.trailer.imDbId}"
+                                src="https://www.youtube.com/watch?v=eOrNdBpGMv8"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="ad-place-right">
+            <!-- <img class="ad" src="" alt=""> -->
+        </div>
+
+    </section>
+
+    <footer class="author-info">
+
+        <div class="footer-container">
+            <span>Giorgi Mskhiladze - 2020</span>
+        </div>
+
+    </footer>
+
+    <!-- <script src="./src/Move.js"></script> -->
+    <script src="./src/api.js"></script>
+
+</body>
+
+</html>
